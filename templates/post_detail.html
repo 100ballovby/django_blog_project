@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.created_at }}</p>
+        <p><a href="{% url 'blog' %}">Вернуться</a></p>
+        <hr>
+        <div>{{ post.body|safe }}</div>  <!-- safe разрешает вписывать свой HTML код в текст поста -->
+    </div>
+{% endblock %}

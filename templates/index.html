@@ -7,6 +7,7 @@
             <h2>{{ post.title }}</h2>
             <div class="annotation">{{ post.annotation|safe }}</div>  <!-- safe разрешает вписывать свой HTML код в текст поста -->
         </div>
+        <a href="{% url 'post_detail' pk=post.pk %}">Подробнее</a>
     {% endfor %}
 
 {% endblock %}
