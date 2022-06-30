@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for post in posts %}
+        <div class="card">
+            <h2>{{ post.title }}</h2>
+            <div class="annotation">{{ post.annotation|safe }}</div>  <!-- safe разрешает вписывать свой HTML код в текст поста -->
+        </div>
+    {% endfor %}
+
+{% endblock %}

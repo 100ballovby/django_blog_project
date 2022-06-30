@@ -1,0 +1,12 @@
+.main-header {
+    background: #1d91b5;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.card {
+    border: 0.1em solid gray;
+    border-radius: 2em;
+    margin: 1em auto;
+    padding: 1em;
+}
